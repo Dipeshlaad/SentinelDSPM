@@ -1,0 +1,56 @@
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Node.js
+node_modules/
+dist/
+build/
+coverage/
+.vite/
+
+# Testing and coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Logs and local databases
+*.log
+*.sqlite
+*.sqlite3
+*.db
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local credentials and private keys
+*.pem
+*.key
+credentials/
+secrets/
+
+
+# AWS configuration files - review and sanitize before publishing
+/backend/backend-assume-customer-role.json
+/backend/customer-role-trust.json
+/backend/customer-s3-read-policy.json
+/backend/sentinel-aws-test.yaml
+/backend/sentinel-dspm-backend-trust.json
+/backend/sentinel-dspm.yaml
+
